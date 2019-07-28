@@ -1,8 +1,8 @@
 # DirectAdmin SSH Command Aliases
 
-Idea originally came from my [DirectAdmin forum thread](https://forum.directadmin.com/showthread.php?t=58333), so thought it would be best to put the info into a Github repo so folks can contribute to the list via pull requests adding to the `contributions` subfolder https://github.com/centminmod/directadmin-aliases/contributions with a new markdown `.md` file with your name. Example my contributions are at https://github.com/centminmod/directadmin-aliases/contributions/george.liu.md 
+Idea originally came from my [DirectAdmin forum thread](https://forum.directadmin.com/showthread.php?t=58333), so thought it would be best to put the info into a Github repo so folks can contribute to the list via pull requests adding to the [`contributions`](https://github.com/centminmod/directadmin-aliases/contributions) subfolder with a new markdown `.md` file with your name. Example my contributions are at [here](https://github.com/centminmod/directadmin-aliases/blob/master/contributions/george.liu.md).
 
-## SSH Command AliaseS' Purpose
+## SSH Command Aliases' Purpose
 
 To save time typing I usually setup my own alias command shortcuts in /root/.bashrc to allow me to navigate a system more quickly. I am sure seasoned DirectAdmin pros do the same.
 
