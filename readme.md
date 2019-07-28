@@ -24,6 +24,7 @@ alias cbvers='/usr/local/directadmin/custombuild/build versions'
 alias mysqladmin='mysqladmin --defaults-extra-file=/usr/local/directadmin/conf/my.cnf'
 alias mysqldump='mysqldump --defaults-extra-file=/usr/local/directadmin/conf/my.cnf'
 alias mysql='mysql --defaults-extra-file=/usr/local/directadmin/conf/my.cnf'
+alias phpconfig='for pc in $(ls -1 /usr/local/php*/bin/php-config); do echo; $pc; done'
 ```
 
 ## Examples
@@ -58,4 +59,53 @@ Latest version of PHP 7.2: 7.2.20
 Installed version of PHP 7.2: 7.2.20
 Latest version of PHP 7.3: 7.3.7
 Installed version of PHP 7.3: 7.3.7
+```
+
+```
+phpconfig
+
+Usage: /usr/local/php56/bin/php-config [OPTION]
+Options:
+  --prefix            [/usr/local/php56]
+  --includes          [-I/usr/local/php56/include/php -I/usr/local/php56/include/php/main -I/usr/local/php56/include/php/TSRM -I/usr/local/php56/include/php/Zend -I/usr/local/php56/include/php/ext -I/usr/local/php56/include/php/ext/date/lib]
+  --ldflags           [ -L/usr/local/lib -L/usr/local/icu/lib]
+  --libs              [-lcrypt   -lz -lexslt -lresolv -lcrypt -lrt -lmcrypt -lltdl -lstdc++ -liconv -lpng -lz -ljpeg -lcurl -lz -lpcre -lrt -lm -ldl -lnsl  -lsystemd -lxml2 -lz -liconv -lm -ldl -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lssl -lcrypto -lcurl -lxml2 -lz -liconv -lm -ldl -lssl -lcrypto -lfreetype -licui18n -licuuc -licudata -licuio -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lcrypt -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lxslt -lxml2 -lz -liconv -ldl -lm -lssl -lcrypto -lcrypt ]
+  --extension-dir     [/usr/local/php56/lib/php/extensions/no-debug-non-zts-20131226]
+  --include-dir       [/usr/local/php56/include/php]
+  --man-dir           [/usr/local/php56/php/man]
+  --php-binary        [/usr/local/php56/bin/php56]
+  --php-sapis         [ cli fpm cgi]
+  --configure-options [--prefix=/usr/local/php56 --program-suffix=56 --enable-fpm --with-fpm-systemd --with-config-file-scan-dir=/usr/local/php56/lib/php.conf.d --with-curl --with-gd --enable-gd-native-ttf --with-gettext --with-jpeg-dir=/usr/local/lib --with-freetype-dir=/usr/local/lib --with-libxml-dir=/usr/local/lib --with-kerberos --with-openssl --with-mcrypt --with-mhash --with-mysql=mysqlnd --with-mysql-sock=/var/lib/mysql/mysql.sock --with-mysqli=mysqlnd --with-pcre-regex=/usr/local --with-pdo-mysql=mysqlnd --with-pear --with-png-dir=/usr/local/lib --with-xsl --with-zlib --enable-zip --with-iconv=/usr/local --enable-bcmath --enable-calendar --enable-exif --enable-ftp --enable-sockets --enable-soap --enable-mbstring --with-icu-dir=/usr/local/icu --enable-intl CC=ccache CXX=ccache CXXFLAGS=-std=c++11 -DU_USING_ICU_NAMESPACE=1]
+  --version           [5.6.40]
+  --vernum            [50640]
+
+Usage: /usr/local/php72/bin/php-config [OPTION]
+Options:
+  --prefix            [/usr/local/php72]
+  --includes          [-I/usr/local/php72/include/php -I/usr/local/php72/include/php/main -I/usr/local/php72/include/php/TSRM -I/usr/local/php72/include/php/Zend -I/usr/local/php72/include/php/ext -I/usr/local/php72/include/php/ext/date/lib]
+  --ldflags           [ -L/usr/local/lib -L/usr/local/icu/lib]
+  --libs              [-lcrypt   -lz -lexslt -lresolv -lcrypt -lsodium -lrt -lstdc++ -liconv -lpng -lz -ljpeg -lwebp -lz -lpcre -lrt -lm -ldl -lnsl  -lsystemd -lxml2 -lz -liconv -lm -ldl -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lssl -lcrypto -lcurl -lxml2 -lz -liconv -lm -ldl -lssl -lcrypto -lfreetype -licui18n -licuuc -licudata -licuio -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lcrypt -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lxslt -lxml2 -lz -liconv -ldl -lm -lssl -lcrypto -lcrypt ]
+  --extension-dir     [/usr/local/php72/lib/php/extensions/no-debug-non-zts-20170718]
+  --include-dir       [/usr/local/php72/include/php]
+  --man-dir           [/usr/local/php72/php/man]
+  --php-binary        [/usr/local/php72/bin/php72]
+  --php-sapis         [ cli fpm phpdbg cgi]
+  --configure-options [--prefix=/usr/local/php72 --program-suffix=72 --enable-fpm --with-fpm-systemd --with-config-file-scan-dir=/usr/local/php72/lib/php.conf.d --with-curl --with-gd --with-gettext --with-jpeg-dir=/usr/local/lib --with-freetype-dir=/usr/local/lib --with-libxml-dir=/usr/local/lib --with-kerberos --with-openssl --with-mhash --with-mysql-sock=/var/lib/mysql/mysql.sock --with-mysqli=mysqlnd --with-pcre-regex=/usr/local --with-pdo-mysql=mysqlnd --with-pear --with-png-dir=/usr/local/lib --with-sodium=/usr/local --with-webp-dir=/usr/local/lib --with-xsl --with-zlib --enable-zip --with-iconv=/usr/local --enable-bcmath --enable-calendar --enable-exif --enable-ftp --enable-sockets --enable-soap --enable-mbstring --with-icu-dir=/usr/local/icu --enable-intl]
+  --version           [7.2.20]
+  --vernum            [70220]
+
+Usage: /usr/local/php73/bin/php-config [OPTION]
+Options:
+  --prefix            [/usr/local/php73]
+  --includes          [-I/usr/local/php73/include/php -I/usr/local/php73/include/php/main -I/usr/local/php73/include/php/TSRM -I/usr/local/php73/include/php/Zend -I/usr/local/php73/include/php/ext -I/usr/local/php73/include/php/ext/date/lib]
+  --ldflags           [ -L/usr/local/lib -L/usr/local/icu/lib]
+  --libs              [-lcrypt   -lz -lexslt -lresolv -lcrypt -lsodium -lrt -lstdc++ -liconv -lpng -lz -ljpeg -lwebp -lz -lrt -lm -ldl -lnsl  -lsystemd -lxml2 -lz -liconv -lm -ldl -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lssl -lcrypto -lpcre2-8 -lcurl -lxml2 -lz -liconv -lm -ldl -lssl -lcrypto -lfreetype -licui18n -licuuc -licudata -licuio -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lcrypt -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lxml2 -lz -liconv -lm -ldl -lxslt -lxml2 -lz -liconv -ldl -lm -lssl -lcrypto -lcrypt ]
+  --extension-dir     [/usr/local/php73/lib/php/extensions/no-debug-non-zts-20180731]
+  --include-dir       [/usr/local/php73/include/php]
+  --man-dir           [/usr/local/php73/php/man]
+  --php-binary        [/usr/local/php73/bin/php73]
+  --php-sapis         [ cli fpm phpdbg cgi]
+  --configure-options [--prefix=/usr/local/php73 --program-suffix=73 --enable-fpm --with-fpm-systemd --with-config-file-scan-dir=/usr/local/php73/lib/php.conf.d --with-curl --with-gd --with-gettext --with-jpeg-dir=/usr/local/lib --with-freetype-dir=/usr/local/lib --with-libxml-dir=/usr/local/lib --with-kerberos --with-openssl --with-mhash --with-mysql-sock=/var/lib/mysql/mysql.sock --with-mysqli=mysqlnd --with-pcre-regex=/usr/local --with-pdo-mysql=mysqlnd --with-pear --with-png-dir=/usr/local/lib --with-sodium=/usr/local --with-webp-dir=/usr/local/lib --with-xsl --with-zlib --enable-zip --without-libzip --with-iconv=/usr/local --enable-bcmath --enable-calendar --enable-exif --enable-ftp --enable-sockets --enable-soap --enable-mbstring --with-icu-dir=/usr/local/icu --enable-intl]
+  --version           [7.3.7]
+  --vernum            [70307]
 ```
